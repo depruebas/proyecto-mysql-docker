@@ -15,7 +15,7 @@ down:
 	UserUID=${U_ID}  docker-compose down
 
 shell:
-	UserUID=${U_ID} docker exec -it --user ${U_ID} test_web_mysql bash
+	UserUID=${U_ID} docker exec -it --user ${U_ID} test_php_mysql bash
 
 build:
 	@echo 'Reiniciando containers: UserUID=${U_ID} docker-compose build'
